@@ -20,6 +20,14 @@
         /* Shadow derived from primary color visually */
     }
 
+    body {
+        user-select: none;
+        -webkit-user-select: none;
+        /* Safari */
+        -ms-user-select: none;
+        /* IE/Edge antigo */
+    }
+
     .cert-section {
         position: relative;
         width: 100%;
