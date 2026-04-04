@@ -16,9 +16,9 @@
     <noscript data-n-css=""></noscript>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    
-    
-   
+
+
+
 </head>
 
 <body>
@@ -268,30 +268,33 @@
                                                                 }
 
                                                                 /* MEDIA QUERIES */
-                                                               /* MEDIA QUERIES */
+                                                                /* MEDIA QUERIES */
                                                                 @media (min-width: 900px) {
                                                                     .nav-toggle {
                                                                         display: none;
                                                                     }
-                                                                    
+
                                                                     .nav-links-desktop {
                                                                         display: flex;
                                                                     }
-                                                                    
+
                                                                     .mobile-menu {
-                                                                        display: none; /* Isso esconde o menu mobile em desktop */
+                                                                        display: none;
+                                                                        /* Isso esconde o menu mobile em desktop */
                                                                     }
                                                                 }
 
                                                                 /* Para mobile, garantir que o menu possa ser mostrado */
                                                                 @media (max-width: 899px) {
                                                                     .mobile-menu {
-                                                                        display: flex !important; /* Garante que o menu existe */
-                                                                        visibility: hidden; /* Usa visibility em vez de display */
+                                                                        display: flex !important;
+                                                                        /* Garante que o menu existe */
+                                                                        visibility: hidden;
+                                                                        /* Usa visibility em vez de display */
                                                                         opacity: 0;
                                                                         transition: visibility 0.4s, opacity 0.4s, max-height 0.4s;
                                                                     }
-                                                                    
+
                                                                     .mobile-menu.is-open {
                                                                         visibility: visible !important;
                                                                         opacity: 1 !important;
@@ -599,51 +602,53 @@
                                                                 }
 
                                                                 /* Ajuste de camadas para o doodle-accent */
-.hero-section {
-    position: relative;
-    isolation: isolate; /* Cria um novo contexto de empilhamento */
-}
+                                                                .hero-section {
+                                                                    position: relative;
+                                                                    isolation: isolate;
+                                                                    /* Cria um novo contexto de empilhamento */
+                                                                }
 
-.hero-container {
-    position: relative;
-    z-index: 2;
-}
+                                                                .hero-container {
+                                                                    position: relative;
+                                                                    z-index: 2;
+                                                                }
 
-/* O doodle-accent agora fica como fundo da seção inteira */
-.doodle.doodle-accent {
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    top: -10%;
-    left: -10%;
-    z-index: 1 !important; /* Fica acima do fundo mas abaixo do conteúdo */
-    opacity: 0.6;
-    pointer-events: none;
-    animation: rotate 20s linear infinite;
-}
+                                                                /* O doodle-accent agora fica como fundo da seção inteira */
+                                                                .doodle.doodle-accent {
+                                                                    position: absolute;
+                                                                    width: 120%;
+                                                                    height: 120%;
+                                                                    top: -10%;
+                                                                    left: -10%;
+                                                                    z-index: 1 !important;
+                                                                    /* Fica acima do fundo mas abaixo do conteúdo */
+                                                                    opacity: 0.6;
+                                                                    pointer-events: none;
+                                                                    animation: rotate 20s linear infinite;
+                                                                }
 
-/* Garantir que o conteúdo fique acima */
-.hero-content,
-.hero-visual {
-    position: relative;
-    z-index: 3;
-}
+                                                                /* Garantir que o conteúdo fique acima */
+                                                                .hero-content,
+                                                                .hero-visual {
+                                                                    position: relative;
+                                                                    z-index: 3;
+                                                                }
 
-/* Ajustar os outros doodles para não competirem */
-.doodle-shape-1,
-.doodle-shape-2 {
-    z-index: 2;
-}
+                                                                /* Ajustar os outros doodles para não competirem */
+                                                                .doodle-shape-1,
+                                                                .doodle-shape-2 {
+                                                                    z-index: 2;
+                                                                }
 
-/* Para mobile, garantir que o doodle não atrapalhe */
-@media (max-width: 768px) {
-    .doodle.doodle-accent {
-        width: 150%;
-        height: 150%;
-        top: -25%;
-        left: -25%;
-    }
-}
+                                                                /* Para mobile, garantir que o doodle não atrapalhe */
+                                                                @media (max-width: 768px) {
+                                                                    .doodle.doodle-accent {
+                                                                        width: 150%;
+                                                                        height: 150%;
+                                                                        top: -25%;
+                                                                        left: -25%;
+                                                                    }
+                                                                }
 
                                                                 /* Animations */
                                                                 @keyframes morph {
@@ -732,53 +737,59 @@
                                                             </style>
 
                                                             <section class="hero-section" data-section-id="hero-suelen">
-    <div class="hero-container">
-        <!-- Left Column: Text Content -->
-        <div class="hero-content">
-            <h1 class="hero-title animate-in delay-2">
-                Bem-vindos!
-            </h1>
+                                                                <div class="hero-container">
+                                                                    <!-- Left Column: Text Content -->
+                                                                    <div class="hero-content">
+                                                                        <h1 class="hero-title animate-in delay-2">
+                                                                            Bem-vindos!
+                                                                        </h1>
 
-            <h2 class="hero-subtitle animate-in delay-3">
-                Enfermagem com Humanização &amp; Estratégia
-            </h2>
+                                                                        <h2 class="hero-subtitle animate-in delay-3"
+                                                                            style="font-size: clamp(1rem, 1.5vw, 1.25rem); max-width: 90%;">
+                                                                            Enfermeira | Saúde da Família • Atenção
+                                                                            Primária | Urgência e Emergência • UTI |
+                                                                            Segurança do Paciente | BLS • ACLS
+                                                                        </h2>
 
-            <p class="hero-description animate-in delay-3">
-                Dedicação ao cuidado em saúde combinada com
-                experiência em vendas e comunicação
-                assertiva. Focada na segurança do paciente e
-                no atendimento integral.
-            </p>
+                                                                        <p class="hero-description animate-in delay-3">
+                                                                            Sou uma profissional dedicada à área de
+                                                                            saúde e assistência de Enfermagem, com
+                                                                            experiência prática em Atenção Primária e
+                                                                            ambiente hospitalar, atuando na assistência
+                                                                            ao paciente, monitorização clínica e apoio
+                                                                            em situações de urgência e emergência.
+                                                                        </p>
 
-            <div class="hero-actions animate-in delay-4">
-                <a href="https://www.linkedin.com/in/suelenn-corr%C3%AAa/"
-                    class="btn btn-secondary">
-                    Entre em Contato
-                </a>
-            </div>
-        </div>
+                                                                        <div class="hero-actions animate-in delay-4">
+                                                                            <a href="https://www.linkedin.com/in/suelenn-corr%C3%AAa/"
+                                                                                class="btn btn-secondary">
+                                                                                Entre em Contato
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
 
-        <!-- Right Column: Image & Visuals -->
-        <div class="hero-visual animate-in delay-2">
-            <!-- Decorative Doodles -->
-            <div class="doodle doodle-accent"></div> <!-- Este agora vai atrás de TUDO -->
-            <div class="doodle doodle-shape-1"
-                style="transform: translate(0.526042px, 9.8995px) rotate(0deg);">
-            </div>
-            <div class="doodle doodle-shape-2"
-                style="transform: translate(1.05208px, 19.799px) rotate(15deg);">
-            </div>
-            
+                                                                    <!-- Right Column: Image & Visuals -->
+                                                                    <div class="hero-visual animate-in delay-2">
+                                                                        <!-- Decorative Doodles -->
+                                                                        <div class="doodle doodle-accent"></div>
+                                                                        <!-- Este agora vai atrás de TUDO -->
+                                                                        <div class="doodle doodle-shape-1"
+                                                                            style="transform: translate(0.526042px, 9.8995px) rotate(0deg);">
+                                                                        </div>
+                                                                        <div class="doodle doodle-shape-2"
+                                                                            style="transform: translate(1.05208px, 19.799px) rotate(15deg);">
+                                                                        </div>
 
-            <!-- Main Image -->
-            <div class="image-wrapper">
-                <img src="static/1.png"
-                    alt="Suelen Corrêa - Profile Picture"
-                    width="450" height="450">
-            </div>
-        </div>
-    </div>
-</section>
+
+                                                                        <!-- Main Image -->
+                                                                        <div class="image-wrapper">
+                                                                            <img src="static/1.png"
+                                                                                alt="Suelen Corrêa - Profile Picture"
+                                                                                width="450" height="450">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
 
                                                             <script>
                                                                 (() => {
@@ -1041,14 +1052,29 @@
                                                                         <!-- Left Column: Bio & Visual -->
                                                                         <div class="about-bio">
                                                                             <p class="about-description">
-                                                                                Sou acadêmica de Enfermagem na
-                                                                                Universidade Federal XYZ (Previsão
-                                                                                07/2026) com uma bagagem única. Minha
-                                                                                experiência prévia em vendas B2B/B2C me
-                                                                                ensinou a importância da escuta ativa e
-                                                                                da negociação, habilidades que hoje
-                                                                                aplico no acolhimento e na assistência
+                                                                                Sou uma profissional dedicada à área de
+                                                                                saúde e assistência de Enfermagem, com
+                                                                                experiência prática em Atenção Primária
+                                                                                e ambiente hospitalar.
+                                                                                <br><br>
+                                                                                Tenho vivência em acolhimento, consultas
+                                                                                de enfermagem, acompanhamento de
+                                                                                pacientes crônicos, saúde da mulher e
+                                                                                educação em saúde, sempre com foco na
+                                                                                segurança do paciente e qualidade
+                                                                                assistencial. Minha trajetória
+                                                                                profissional anterior na área comercial
+                                                                                fortaleceu habilidades essenciais como
+                                                                                comunicação, empatia, escuta ativa e
+                                                                                resolução de problemas, competências que
+                                                                                aplico diariamente no cuidado humanizado
                                                                                 ao paciente.
+                                                                                <br><br>
+                                                                                Trago comigo uma experiência prévia em
+                                                                                vendas B2B/B2C, que contribuiu para o
+                                                                                desenvolvimento de habilidades
+                                                                                interpessoais, de comunicação e
+                                                                                resolução de conflitos.
                                                                             </p>
 
                                                                             <!-- Visual Metaphor: Sales to Nursing -->
@@ -1093,7 +1119,8 @@
                                                                                     </svg>
                                                                                 </div>
                                                                                 <p class="card-text">Bacharelado em
-                                                                                    Enfermagem em andamento</p>
+                                                                                    Enfermagem – Universidade Estácio de
+                                                                                    Sá</p>
                                                                             </li>
 
                                                                             <li class="key-point-card"
@@ -1106,31 +1133,84 @@
                                                                                         stroke-linecap="round"
                                                                                         stroke-linejoin="round">
                                                                                         <path
-                                                                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                                                                            d="M22 10v6M2 10l10-5 10 5-10 5z">
                                                                                         </path>
-                                                                                    </svg>
-                                                                                </div>
-                                                                                <p class="card-text">Foco em Humanização
-                                                                                    e Segurança do Paciente</p>
-                                                                            </li>
-
-                                                                            <li class="key-point-card"
-                                                                                style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);">
-                                                                                <div class="card-icon">
-                                                                                    <svg width="24" height="24"
-                                                                                        viewBox="0 0 24 24" fill="none"
-                                                                                        stroke="currentColor"
-                                                                                        stroke-width="2"
-                                                                                        stroke-linecap="round"
-                                                                                        stroke-linejoin="round">
                                                                                         <path
-                                                                                            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                                                                            d="M6 12v5c3 3 9 3 12 0v-5">
                                                                                         </path>
                                                                                     </svg>
                                                                                 </div>
-                                                                                <p class="card-text">Soft skills de
-                                                                                    comunicação e resolução de crises
+                                                                                <p class="card-text">Pós-Graduação em
+                                                                                    Urgência e Emergência e Gestão nos
+                                                                                    Serviços Hospitalares – FACUMINAS
                                                                                 </p>
+                                                                            </li>
+
+                                                                            <li class="key-point-card"
+                                                                                style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);">
+                                                                                <div class="card-icon">
+                                                                                    <svg width="24" height="24"
+                                                                                        viewBox="0 0 24 24" fill="none"
+                                                                                        stroke="currentColor"
+                                                                                        stroke-width="2"
+                                                                                        stroke-linecap="round"
+                                                                                        stroke-linejoin="round">
+                                                                                        <path
+                                                                                            d="M22 10v6M2 10l10-5 10 5-10 5z">
+                                                                                        </path>
+                                                                                        <path
+                                                                                            d="M6 12v5c3 3 9 3 12 0v-5">
+                                                                                        </path>
+                                                                                    </svg>
+                                                                                </div>
+                                                                                <p class="card-text">Pós-Graduação em
+                                                                                    Enfermagem em UTI Adulto – FACUMINAS
+                                                                                </p>
+                                                                            </li>
+
+                                                                            <li class="key-point-card"
+                                                                                style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);">
+                                                                                <div class="card-icon">
+                                                                                    <svg width="24" height="24"
+                                                                                        viewBox="0 0 24 24" fill="none"
+                                                                                        stroke="currentColor"
+                                                                                        stroke-width="2"
+                                                                                        stroke-linecap="round"
+                                                                                        stroke-linejoin="round">
+                                                                                        <path
+                                                                                            d="M22 10v6M2 10l10-5 10 5-10 5z">
+                                                                                        </path>
+                                                                                        <path
+                                                                                            d="M6 12v5c3 3 9 3 12 0v-5">
+                                                                                        </path>
+                                                                                    </svg>
+                                                                                </div>
+                                                                                <p class="card-text">Pós-Graduação em
+                                                                                    Enfermagem do Trabalho e Gestão em
+                                                                                    Segurança do Trabalho – FACUMINAS
+                                                                                </p>
+                                                                            </li>
+
+                                                                            <li class="key-point-card"
+                                                                                style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);">
+                                                                                <div class="card-icon">
+                                                                                    <svg width="24" height="24"
+                                                                                        viewBox="0 0 24 24" fill="none"
+                                                                                        stroke="currentColor"
+                                                                                        stroke-width="2"
+                                                                                        stroke-linecap="round"
+                                                                                        stroke-linejoin="round">
+                                                                                        <path
+                                                                                            d="M22 10v6M2 10l10-5 10 5-10 5z">
+                                                                                        </path>
+                                                                                        <path
+                                                                                            d="M6 12v5c3 3 9 3 12 0v-5">
+                                                                                        </path>
+                                                                                    </svg>
+                                                                                </div>
+                                                                                <p class="card-text">Pós-Graduação em
+                                                                                    Enfermagem na Atenção Primária
+                                                                                    (Saúde da Família) - DNA Pós</p>
                                                                             </li>
                                                                         </ul>
                                                                     </div>
@@ -1849,11 +1929,10 @@
                                                                     </header>
 
                                                                     <div class="experience-grid">
-                                                                        <!-- Card 1: Clinical Simulations -->
+                                                                        <!-- Card 1: Hospital -->
                                                                         <article class="experience-card fade-up delay-1"
                                                                             style="animation-play-state: paused;">
                                                                             <div class="card-icon-wrapper">
-                                                                                <!-- Stethoscope Icon -->
                                                                                 <svg viewBox="0 0 24 24">
                                                                                     <path
                                                                                         d="M4.8 2.3A.7.7 0 0 0 5 2h-.5a.5.5 0 0 0-.5.5v2.8c0 2.5 1.8 4.6 4.2 5 .4 2.8 2.8 5 5.7 5.2V20h-1a1 1 0 0 0-1 1v1h4v-1a1 1 0 0 0-1-1h-1v-4.5c2.9-.2 5.3-2.4 5.7-5.2 2.4-.4 4.2-2.5 4.2-5V2.5a.5.5 0 0 0-.5-.5H19a.7.7 0 0 0 .2.3c.2.4.2.9-.2 1.2l-.6.6c-.4.4-1 .4-1.4 0L16 3.1c-.4-.4-.4-1 0-1.4l.6-.6c.3-.3.8-.3 1.2-.2H10a.7.7 0 0 0 1.2.2l.6.6c.4.4.4 1 0 1.4l-1 1c-.4.4-1 .4-1.4 0l-.6-.6c-.4-.3-.4-.8-.2-1.2H5v2.8c0 1.9 1.6 3.5 3.5 3.5s3.5-1.6 3.5-3.5V2.5c0-.2-.1-.4-.2-.5l.6.3z">
@@ -1864,16 +1943,26 @@
                                                                                 </svg>
                                                                             </div>
                                                                             <div class="card-content">
-                                                                                <h4 class="card-subtitle">Laboratório de
-                                                                                    Enfermagem, Univ. XYZ</h4>
-                                                                                <h3 class="card-title">Simulações
-                                                                                    Clínicas Avançadas</h3>
+                                                                                <h4 class="card-subtitle">Hospital
+                                                                                    Municipal de São João de Meriti -
+                                                                                    Estágio<br>Jun de 2025 - Dez de 2025
+                                                                                </h4>
+                                                                                <h3 class="card-title"
+                                                                                    style="margin-bottom: 5px;">UTI
+                                                                                    Adulto • Emergência</h3>
                                                                                 <p class="card-details">
-                                                                                    Mais de 50 atendimentos simulados:
-                                                                                    anamnese, sinais vitais e registro
-                                                                                    em prontuário eletrônico. Foco em
-                                                                                    tomadas de decisão rápida e
-                                                                                    protocolos de segurança.
+                                                                                    Assistência a pacientes críticos e
+                                                                                    em urgência, com monitorização,
+                                                                                    administração de medicamentos sob
+                                                                                    supervisão e suporte à equipe.
+                                                                                </p>
+                                                                                <h3 class="card-title"
+                                                                                    style="margin-top: 10px; margin-bottom: 5px;">
+                                                                                    Centro Cirúrgico • Clinica Cirúrgica
+                                                                                    • CME</h3>
+                                                                                <p class="card-details">
+                                                                                    Atividades de estágio desenvolvidas
+                                                                                    no setor.
                                                                                 </p>
                                                                             </div>
                                                                         </article>
@@ -1882,7 +1971,6 @@
                                                                         <article class="experience-card fade-up delay-2"
                                                                             style="animation-play-state: paused;">
                                                                             <div class="card-icon-wrapper">
-                                                                                <!-- Community Icon -->
                                                                                 <svg viewBox="0 0 24 24">
                                                                                     <path
                                                                                         d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
@@ -1897,42 +1985,18 @@
                                                                                 </svg>
                                                                             </div>
                                                                             <div class="card-content">
-                                                                                <h4 class="card-subtitle">Extensão
-                                                                                    Universitária</h4>
-                                                                                <h3 class="card-title">Projeto 'Saúde na
-                                                                                    Comunidade'</h3>
-                                                                                <p class="card-details">
-                                                                                    Ações de triagem e educação em saúde
-                                                                                    para públicos vulneráveis em feiras
-                                                                                    itinerantes. Desenvolvimento de
-                                                                                    comunicação clara e acessível para
-                                                                                    diversos perfis.
-                                                                                </p>
-                                                                            </div>
-                                                                        </article>
-
-                                                                        <!-- Card 3: Volunteering -->
-                                                                        <article class="experience-card fade-up delay-3"
-                                                                            style="animation-play-state: paused;">
-                                                                            <div class="card-icon-wrapper">
-                                                                                <!-- Heart/Care Icon -->
-                                                                                <svg viewBox="0 0 24 24">
-                                                                                    <path
-                                                                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                                                                    </path>
-                                                                                </svg>
-                                                                            </div>
-                                                                            <div class="card-content">
-                                                                                <h4 class="card-subtitle">Atenção Básica
+                                                                                <h4 class="card-subtitle">Coordenadoria
+                                                                                    Geral de Atenção Primária AP5.2 •
+                                                                                    Estágio<br>Fev de 2025 - Ago de 2025
                                                                                 </h4>
-                                                                                <h3 class="card-title">Voluntariado em
-                                                                                    UBS</h3>
+                                                                                <h3 class="card-title"
+                                                                                    style="margin-bottom: 5px;">Atenção
+                                                                                    Primária • Saúde da Familia</h3>
                                                                                 <p class="card-details">
-                                                                                    Apoio em vacinação e promoção de
-                                                                                    saúde, exercitando acolhimento
-                                                                                    humanizado. Experiência direta com
-                                                                                    fluxo de atendimento e demandas
-                                                                                    reais do SUS.
+                                                                                    Saúde da Mulher, Criança e
+                                                                                    Adolecente. Acompanhamento de
+                                                                                    pacientes crônicos e educação em
+                                                                                    saúde em estágio na COGAP.
                                                                                 </p>
                                                                             </div>
                                                                         </article>
@@ -1988,7 +2052,7 @@
           w-full  relative
           
         " style="background: var(--landing-background);">
-                                                           
+
 
                                                             <section class="cert-section"
                                                                 data-section-id="certifications-01">
@@ -1997,7 +2061,7 @@
                                                                 <div class="bg-doodle doodle-2"></div>
 
                                                                 <div class="cert-container">
-                                                                    <h2 class="cert-heading">Aprendizado Contínuo</h2>
+                                                                    <h2 class="cert-heading">Certificações</h2>
 
                                                                     <ul class="cert-list">
                                                                         <!-- Item 1 -->
@@ -2005,9 +2069,9 @@
                                                                             <div class="cert-bullet" aria-hidden="true">
                                                                             </div>
                                                                             <div class="cert-content">
-                                                                                <span class="cert-title">Primeiros
-                                                                                    Socorros em Ambientes Clínicos –
-                                                                                    FIOCRUZ (20h)</span>
+                                                                                <span class="cert-title">Feridas e
+                                                                                    Curativos na Atenção Primária à
+                                                                                    Saúde - AVASUS</span>
                                                                             </div>
                                                                         </li>
 
@@ -2016,8 +2080,9 @@
                                                                             <div class="cert-bullet" aria-hidden="true">
                                                                             </div>
                                                                             <div class="cert-content">
-                                                                                <span class="cert-title">Comunicação
-                                                                                    Terapêutica – Unasus (15h)</span>
+                                                                                <span class="cert-title">Gestão em
+                                                                                    Segurança do Paciente -
+                                                                                    AVASUS</span>
                                                                             </div>
                                                                         </li>
 
@@ -2026,8 +2091,8 @@
                                                                             <div class="cert-bullet" aria-hidden="true">
                                                                             </div>
                                                                             <div class="cert-content">
-                                                                                <span class="cert-title">Cuidados com
-                                                                                    Idosos – Cursa.app (30h)</span>
+                                                                                <span class="cert-title">Inteligência
+                                                                                    Artificial na Saúde - AVASUS</span>
                                                                             </div>
                                                                         </li>
 
@@ -2036,9 +2101,19 @@
                                                                             <div class="cert-bullet" aria-hidden="true">
                                                                             </div>
                                                                             <div class="cert-content">
-                                                                                <span class="cert-title">Excel para
-                                                                                    Profissionais de Saúde – Fundação
-                                                                                    Bradesco</span>
+                                                                                <span class="cert-title">Suporte
+                                                                                    Avançado de Vida em Cardiologia
+                                                                                    (ACLS) - ELEVO</span>
+                                                                            </div>
+                                                                        </li>
+
+                                                                        <!-- Item 5 -->
+                                                                        <li class="cert-item">
+                                                                            <div class="cert-bullet" aria-hidden="true">
+                                                                            </div>
+                                                                            <div class="cert-content">
+                                                                                <span class="cert-title">Suporte Básico
+                                                                                    de Vida (BLS) - AVASUS</span>
                                                                             </div>
                                                                         </li>
                                                                     </ul>
@@ -2227,7 +2302,7 @@
                                                                 }
 
                                                                 .btn-secondary:hover {
-                                                                    background-color: var(--landing-hover-secondary);                                                                    
+                                                                    background-color: var(--landing-hover-secondary);
                                                                 }
 
                                                                 .btn:active {
@@ -2315,7 +2390,7 @@
                                                                     <!-- CTA Buttons -->
                                                                     <div class="cta-group"
                                                                         style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out 0.3s, transform 0.6s ease-out 0.3s;">
-                                                                        <a href="mailto:suelen.correa@gmail.com"
+                                                                        <a href="mailto:suelencorrea.enf@gmail.com"
                                                                             class="btn btn-primary">
                                                                             <svg viewBox="0 0 24 24"
                                                                                 xmlns="http://www.w3.org/2000/svg">
@@ -2325,8 +2400,8 @@
                                                                             </svg>
                                                                             Enviar Email
                                                                         </a>
-                                                                        <a href="https://www.linkedin.com/in/suelenn-corr%C3%AAa/" target="_blank"
-                                                                            rel="noopener noreferrer"
+                                                                        <a href="https://www.linkedin.com/in/suelenn-corr%C3%AAa/"
+                                                                            target="_blank" rel="noopener noreferrer"
                                                                             class="btn btn-secondary">
                                                                             <svg viewBox="0 0 24 24"
                                                                                 xmlns="http://www.w3.org/2000/svg">
@@ -2659,7 +2734,7 @@
                                                                                 </svg>
                                                                             </a>
                                                                             <!-- Email (Inferred from Contact Section) -->
-                                                                            <a href="mailto:suelen.correa@gmail.com"
+                                                                            <a href="mailto:suelencorrea.enf@gmail.com"
                                                                                 class="social-link" aria-label="Email">
                                                                                 <svg width="20" height="20"
                                                                                     viewBox="0 0 24 24" fill="none"
@@ -2674,7 +2749,7 @@
                                                                                     </polyline>
                                                                                 </svg>
                                                                             </a>
-                                                                            
+
                                                                         </div>
                                                                     </div>
 
@@ -2773,7 +2848,7 @@
                             <lottie-player src="/animation/lottie-loader.json" background="transparent" speed="1"
                                 style="width: 150px; height: 150px; min-width: 150px;" direction="1" mode="normal"
                                 autoplay="true" loop=""></lottie-player>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -2791,48 +2866,48 @@
     </next-route-announcer>
     <div id="dynamic-script-container-mdpoznf2c">
         <script data-script-index="0">
-            (function() {
+            (function () {
                 // Função principal para configurar o menu
                 function setupMobileMenu() {
                     const toggleBtn = document.querySelector('.nav-toggle');
                     const mobileMenu = document.getElementById('mobileMenu');
-                    
+
                     if (!toggleBtn || !mobileMenu) {
                         return false;
                     }
-                    
-                    
+
+
                     // Remove event listeners antigos clonando e substituindo
                     const newToggleBtn = toggleBtn.cloneNode(true);
                     toggleBtn.parentNode.replaceChild(newToggleBtn, toggleBtn);
-                    
+
                     // Re-seleciona os elementos
                     const finalToggleBtn = document.querySelector('.nav-toggle');
                     const mobileLinks = document.querySelectorAll('.mobile-link');
                     const bars = document.querySelectorAll('.toggle-bar');
-                    
+
                     // Garante que o menu começa fechado
                     mobileMenu.classList.remove('is-open');
                     finalToggleBtn.setAttribute('aria-expanded', 'false');
-                    
+
                     // Reseta as barras
                     bars.forEach(bar => {
                         bar.style.transform = 'none';
                         bar.style.opacity = '1';
                     });
-                    
+
                     // Adiciona o evento de clique
-                    finalToggleBtn.addEventListener('click', function(e) {
+                    finalToggleBtn.addEventListener('click', function (e) {
                         e.preventDefault();
                         e.stopPropagation();
-                        
+
                         const isOpen = mobileMenu.classList.contains('is-open');
-                        
+
                         // Toggle menu
                         if (!isOpen) {
                             mobileMenu.classList.add('is-open');
                             finalToggleBtn.setAttribute('aria-expanded', 'true');
-                            
+
                             // Animar hamburger para X
                             if (bars.length >= 3) {
                                 bars[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
@@ -2842,7 +2917,7 @@
                         } else {
                             mobileMenu.classList.remove('is-open');
                             finalToggleBtn.setAttribute('aria-expanded', 'false');
-                            
+
                             // Resetar hamburger
                             bars.forEach(bar => {
                                 bar.style.transform = 'none';
@@ -2850,45 +2925,45 @@
                             });
                         }
                     });
-                    
+
                     // Fechar menu ao clicar nos links
                     mobileLinks.forEach(link => {
-                        link.addEventListener('click', function() {
+                        link.addEventListener('click', function () {
                             mobileMenu.classList.remove('is-open');
                             finalToggleBtn.setAttribute('aria-expanded', 'false');
-                            
+
                             bars.forEach(bar => {
                                 bar.style.transform = 'none';
                                 bar.style.opacity = '1';
                             });
                         });
                     });
-                    
+
                     return true;
                 }
-                
+
                 // Tentativas em ordem
                 if (setupMobileMenu()) return;
-                
+
                 // Se não funcionou, tenta quando o DOM estiver pronto
-                document.addEventListener('DOMContentLoaded', function() {
+                document.addEventListener('DOMContentLoaded', function () {
                     if (setupMobileMenu()) return;
-                    
+
                     // Último recurso: observa mudanças no DOM
-                    const observer = new MutationObserver(function(mutations) {
+                    const observer = new MutationObserver(function (mutations) {
                         if (document.querySelector('.nav-toggle') && document.getElementById('mobileMenu')) {
                             setupMobileMenu();
                             observer.disconnect();
                         }
                     });
-                    
+
                     observer.observe(document.body, {
                         childList: true,
                         subtree: true
                     });
-                    
+
                     // Timeout de segurança
-                    setTimeout(function() {
+                    setTimeout(function () {
                         observer.disconnect();
                         if (document.querySelector('.nav-toggle') && document.getElementById('mobileMenu')) {
                             setupMobileMenu();
